@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
+  basePath: isProd ? "/personal-website-linktree" : "",
   output: "export",
-  basePath: "/personal-website-linktree",
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
