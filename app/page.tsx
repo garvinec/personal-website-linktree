@@ -1,6 +1,12 @@
-import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Instagram, X, BookOpen, FileText } from "lucide-react"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  X,
+  BookOpen,
+  FileText,
+} from "lucide-react";
 
 export default function Component() {
   const socialLinks = [
@@ -34,7 +40,7 @@ export default function Component() {
       url: "https://instagram.com/garvin.visuals",
       icon: Instagram,
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
@@ -64,7 +70,7 @@ export default function Component() {
           {/* Profile Picture with manga-style border */}
           <div className="mb-8 relative inline-block">
             <div className="w-32 h-32 md:w-40 md:h-40 relative">
-              <Image
+              <img
                 src="/profile.png"
                 alt="Garvin's Profile Picture"
                 width={160}
@@ -75,14 +81,18 @@ export default function Component() {
           </div>
 
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl font-black text-black tracking-tight mb-2">GARVIN</h1>
-          <h2 className="text-xl md:text-2xl font-bold text-gray-700 tracking-wide uppercase">SOFTWARE ENGINEER</h2>
+          <h1 className="text-5xl md:text-7xl font-black text-black tracking-tight mb-2">
+            GARVIN
+          </h1>
+          <h2 className="text-xl md:text-2xl font-bold text-gray-700 tracking-wide uppercase">
+            SOFTWARE ENGINEER
+          </h2>
         </div>
 
         {/* Social Links as manga panels */}
         <div className="w-full max-w-lg space-y-6">
           {socialLinks.map((link, index) => {
-            const Icon = link.icon
+            const Icon = link.icon;
             return (
               <Button
                 key={link.name}
@@ -114,7 +124,9 @@ export default function Component() {
                       <Icon className="w-6 h-6" strokeWidth={3} />
                     </div>
 
-                    <span className="font-black text-xl tracking-wide uppercase">{link.name}</span>
+                    <span className="font-black text-xl tracking-wide uppercase">
+                      {link.name}
+                    </span>
                   </div>
 
                   {/* Manga-style arrow */}
@@ -130,10 +142,10 @@ export default function Component() {
                   </div>
                 </a>
               </Button>
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
+  );
 }
