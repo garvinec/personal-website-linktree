@@ -7,7 +7,6 @@ import {
   BookOpen,
   FileText,
 } from "lucide-react";
-import Image from "next/image";
 
 export default function Component() {
   const socialLinks = [
@@ -71,7 +70,7 @@ export default function Component() {
           {/* Profile Picture with manga-style border */}
           <div className="mb-8 relative inline-block">
             <div className="w-32 h-32 md:w-40 md:h-40 relative">
-              <Image
+              <img
                 src="/profile.png"
                 alt="Garvin's Profile Picture"
                 width={160}
