@@ -71,7 +71,7 @@ export default function Component() {
           <div className="mb-8 relative inline-block">
             <div className="w-32 h-32 md:w-40 md:h-40 relative">
               <img
-                src="/personal-website-linktree/profile.png"
+                src="/profile.png"
                 alt="Garvin's Profile Picture"
                 width={160}
                 height={160}
